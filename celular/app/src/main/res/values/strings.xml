@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Juego de Divisiones</string>
+    <string name="title_activity_main">Juego de Divisiones</string>
+    <string name="package_name">com.juegos.divisiones</string>
+    <string name="custom_url_scheme">com.juegos.divisiones</string>
+</resources>

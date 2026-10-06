@@ -1,0 +1,18 @@
+# Dependencias (se instalan con «npm install»)
+node_modules/
+
+# Instaladores compilados (.exe y .apk): se descargan desde la página de versiones
+instaladores/
+
+# Clave de firma del APK: no se publica
+recursos/clave-android/
+*.keystore
+*.jks
+
+# Capturas y PDF que crean las pruebas
+pruebas/capturas/
+
+# Archivos del sistema
+Thumbs.db
+desktop.ini
+*.log

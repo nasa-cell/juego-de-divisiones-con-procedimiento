@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#07627D">
+<meta name="color-scheme" content="dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' data: blob:; object-src 'none'; base-uri 'none'; frame-src 'none'">
+
+<title>Juego de Divisiones</title>
+<link rel="icon" href="imagenes/icono.png">
+<link rel="stylesheet" href="fuentes.css">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="simbolos" aria-hidden="true"><i>÷</i><i>×</i><i>−</i><i>+</i><i>=</i><i>%</i></div>
+<header class="barra-superior">
+  <div class="logo"><span id="logo-dibujo"></span>Divisiones</div>
+  <button class="boton-sonido" id="boton-sonido" type="button" aria-label="Sonido"></button>
+</header>
+<main id="app"></main>
+<script src="codigo/logo.js"></script>
+<script src="codigo/division.js"></script>
+<script src="codigo/aprendizaje.js"></script>
+<script src="codigo/pistas.js"></script>
+<script src="codigo/almacen.js"></script>
+<script src="codigo/sonidos.js"></script>
+<script src="codigo/bibliotecas/jspdf.umd.min.js"></script>
+<script src="codigo/informe.js"></script>
+<script src="codigo/aplicacion.js"></script>
+</body>
+</html>

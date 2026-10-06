@@ -1,0 +1,6 @@
+{
+  "appId": "com.juegos.divisiones",
+  "appName": "Juego de Divisiones",
+  "webDir": "juego",
+  "android": { "path": "celular" }
+}

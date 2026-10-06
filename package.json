@@ -1,0 +1,59 @@
+{
+  "name": "juego-divisiones",
+  "productName": "Juego de Divisiones",
+  "version": "1.3.4",
+  "description": "Juego para aprender a dividir paso a paso",
+  "main": "pc/principal.js",
+  "author": "Baris",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "pc": "electron .",
+    "pruebas": "node pruebas/probar-motor.js",
+    "instalador": "electron-builder --win nsis --x64",
+    "celular:sincronizar": "cap sync android"
+  },
+  "build": {
+    "appId": "com.juegos.divisiones",
+    "productName": "Juego de Divisiones",
+    "directories": {
+      "output": "instaladores",
+      "buildResources": "recursos"
+    },
+    "files": [
+      "pc/**",
+      "juego/**",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "recursos/icono.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Juego de Divisiones",
+      "artifactName": "Juego de Divisiones Setup ${version}.${ext}",
+      "installerLanguages": [
+        "es_ES"
+      ],
+      "language": "3082",
+      "multiLanguageInstaller": true,
+      "displayLanguageSelector": false
+    }
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.2.2",
+    "electron": "^26.6.10",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.2",
+    "@capacitor/core": "^6.2.2",
+    "@capacitor/filesystem": "^6.0.4",
+    "@capacitor/preferences": "^6.0.4",
+    "@capacitor/share": "^6.0.4"
+  }
+}
